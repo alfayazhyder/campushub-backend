@@ -12,7 +12,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/notices")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(originPatterns = "https://*.vercel.app")
 public class NoticeController {
 
     @Autowired

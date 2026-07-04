@@ -10,14 +10,13 @@ import java.util.List;
 /**
  * Manages the weekly class timetable with fixed time slots.
  * Used by: Teaching staff (edit), Student dashboard (view only).
- *
- * Fixed slots (non-editable slots are handled in the frontend):
- *   08:30-09:00 Newspaper Reading | 10:00-10:30 Break | 12:30-13:15 Lunch | 15:15-15:30 Break
+ * * Fixed slots (non-editable slots are handled in the frontend):
+ * 08:30-09:00 Newspaper Reading | 10:00-10:30 Break | 12:30-13:15 Lunch | 15:15-15:30 Break
  * Editable slots stored here: HOUR1..HOUR6
  */
 @RestController
 @RequestMapping("/api/timetable")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(originPatterns = "https://*.vercel.app")
 public class TimetableController {
 
     @Autowired

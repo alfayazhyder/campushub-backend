@@ -13,7 +13,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/exam-timetable")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(originPatterns = "https://*.vercel.app")
 public class ExamTimetableController {
 
     @Autowired
